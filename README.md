@@ -1,1 +1,2 @@
-# fa22-cse110-lab3
+# Lab 2 - Starter
+URL: https://splotchysnow.github.io/Lab2_Starter/
