@@ -24,21 +24,49 @@ rgb(210,232,205)
 
 /* load-font */
 @font-face {
-  font-family: "myFirstFont";
-  src: url(NotoSansEthiopic-VariableFont_wdth,wght.ttf) format(ttf);
+  font-family: "myFont";
+  src: url("NotoSansEthiopic-VariableFont_wdth,wght.woff2");
 }
-
 
 
 *{
   color:black;
-  /* font-family: "myFirstFont"; */
+  font-family: "myFont";
 }
 
 body{
     background-color: rgb(210,232,205);
     /* text-align: center; */
 }
+
+a[href="https://google.com/"]
+{
+  color: brown;
+}
+
+ol li{
+  color: red;
+}
+
+.two_column > p {
+  color:darkslateblue;
+}
+
+h2 ~ p {
+  color: darkgreen;
+}
+
+/* HEY THIS WORKS...  all list changed execpt first one.*/
+li + li {
+  color: #9c6161;
+}
+
+body.class{
+  color:blue;
+}
+
+
+
 
 p{
     position: relative;
