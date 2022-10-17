@@ -1,0 +1,277 @@
+/* Color selections.
+#74b865
+rgb(116,184,101)
+
+#84c076
+rgb(132,192,118)
+
+#93c888
+rgb(147,200,136)
+
+#a3d099
+rgb(163,208,153)
+
+#b3d8aa
+rgb(179,216,170)
+
+#c2e0bc
+rgb(194,224,188)
+
+#d2e8cd
+rgb(210,232,205)
+
+*/
+
+/* load-font */
+@font-face {
+  font-family: "myFont";
+  src: url("NotoSansEthiopic-VariableFont_wdth,wght.woff2");
+}
+
+
+*{
+  color:black;
+  font-family: "myFont";
+}
+
+body{
+    background-color: rgb(210,232,205);
+    /* text-align: center; */
+}
+
+a[href="https://google.com/"]
+{
+  color: brown;
+}
+
+ol li{
+  color: red;
+}
+
+.two_column > p {
+  color:darkslateblue;
+}
+
+h2 ~ p {
+  color: darkgreen;
+}
+
+/* HEY THIS WORKS...  all list changed execpt first one.*/
+li + li {
+  color: #9c6161;
+}
+
+head.sidenav{
+  background-color: #9c6161;
+  color: red;
+}
+
+
+
+
+p{
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 2ex;
+    background-color: rgb(194,224,188);
+    color: black;
+    /* font-family: 'Times New Roman'; */
+
+}
+
+h1{
+    position: static;
+    height: auto;
+    width: auto;
+    
+    max-height: 2in;
+    max-width: 100%;
+
+    margin-left: 1em;
+    margin-right: 1em;
+    
+    /* background-color: #E8DECA; */
+    border-color: lightyellow;
+    border-width: 2px;
+    border-radius: 1ch;
+    border-style:dashed;
+
+    /* border: 10px; */
+    background: #b3d8aa;
+    border: 5px solid #a3d099;
+    text-decoration:underline;
+    text-align: center;
+}
+
+h2,h3,h4{
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+    /* background-color: #E8DECA; */
+    border-color: lightyellow;
+    /* border: 10px; */
+    background: #c2e0bc;
+    border: 5px solid #d2e8cd;
+    /* text-align: center; */
+}
+
+img{
+    margin-left: 1in;
+    margin-right: 1in;
+    background-color: #b3d8aa;
+}
+
+li{
+    margin-left:20pt;
+    margin-right: 20pt;
+    background-color: #b3d8aa;
+}
+
+.contact-us{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color:rgb(210,232,205);
+}
+
+summary{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(210,232,205);
+}
+
+.media{
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: rgb(210,232,205);
+}
+
+/* control for the three columns */
+.column {
+    float: left;
+    width: 33.33%;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.two_column {
+    float: left;
+    width: 50%;
+}
+  
+/* Clear floats after the columns */
+.two_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* junk code ------------------- from w3school */
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    /* z-index: 1; Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: lightgoldenrodyellow; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    margin: auto;
+    padding: auto;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    display: block;
+    padding: 6px 8px 6px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: hsl(0, 0%, 0%);
+  }
+  /* ------------------------------------------------ */
+
+  /* hover for the sidebar */
+  .sidenav a:hover {
+    color: #9c6161;
+  }
+  
+  /* want to make it so that it turns color when you hover. */
+  p:hover,li:hover{
+    color: #9c6161;
+  }
+
+  h1:hover,h2:hover,h3:hover,h4:hover{
+    color:aqua;
+  }
+
+
+
+body{
+    /* display: grid; */
+    margin-left:160px;
+    padding: 0px 10px;
+  }
+  #columnTitle{
+    margin: 1px,1px,1px,1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+  }
+
+  button:active{
+    color: green;
+    background-color: yellow;
+  }
+
+  ol{
+    /* flex-direction: row | row-reverse | column | column-reverse; */
+    /* flex-wrap: nowrap | wrap | wrap-reverse; */
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+
+    /* display:grid;
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3; */
+
+  }
+
+  ul{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content:center;
+    align-self: flex-start;
+  }
+
+  @media screen and (max-width: 800px) {
+    /* if screen is too small, destroy everything with blue. */
+    *{
+      color: blue;
+    }
+  }
+
+
+  /* addgrid: todo */
+  .grids{
+    margin-left: 2in;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto; 
+    column-gap: 10px;
+    row-gap: 15px;
+  }
+
+
