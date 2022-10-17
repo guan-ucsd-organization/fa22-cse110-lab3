@@ -1,0 +1,143 @@
+/* Color selections.
+#74b865
+rgb(116,184,101)
+
+#84c076
+rgb(132,192,118)
+
+#93c888
+rgb(147,200,136)
+
+#a3d099
+rgb(163,208,153)
+
+#b3d8aa
+rgb(179,216,170)
+
+#c2e0bc
+rgb(194,224,188)
+
+#d2e8cd
+rgb(210,232,205)
+
+*/
+
+body{
+    background-color: rgb(210,232,205);
+}
+
+p{
+    margin-left: 60px;
+    margin-right: 5px;
+    background-color: rgb(194,224,188);
+}
+
+h1{
+    margin-left: 1em;
+    margin-right: 1em;
+    /* background-color: #E8DECA; */
+    border-color: lightyellow;
+    /* border: 10px; */
+    background: #b3d8aa;
+    border: 5px solid #a3d099;
+    
+}
+
+h2,h3,h4{
+    margin-left: 1em;
+    margin-right: 1em;
+    /* background-color: #E8DECA; */
+    border-color: lightyellow;
+    /* border: 10px; */
+    background: #c2e0bc;
+    border: 5px solid #d2e8cd;
+}
+
+img{
+    margin-left: 1in;
+    margin-right: 1in;
+    background-color: #b3d8aa;
+}
+
+li{
+    margin-left:20pt;
+    margin-right: 20pt;
+    background-color: #b3d8aa;
+}
+
+.contact-us{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color:rgb(210,232,205);
+}
+
+summary{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(210,232,205);
+}
+
+.media{
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: rgb(210,232,205);
+}
+
+/* control for the three columns */
+.column {
+    float: left;
+    width: 33.33%;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.two_column {
+    float: left;
+    width: 50%;
+}
+  
+/* Clear floats after the columns */
+.two_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* junk code ------------------- from w3school */
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    /* z-index: 1; Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: lightgoldenrodyellow; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    display: block;
+    padding: 6px 8px 6px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+  }
+  /* ------------------------------------------------ */
+
+  /* hover for the sidebar */
+  .sidenav a:hover {
+    color: #9c6161;
+  }
+  
+body{
+    margin-left:160px;
+    padding: 0px 10px;
+  }
