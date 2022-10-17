@@ -22,6 +22,19 @@ rgb(210,232,205)
 
 */
 
+/* load-font */
+@font-face {
+  font-family: "myFirstFont";
+  src: url(NotoSansEthiopic-VariableFont_wdth,wght.ttf) format(ttf);
+}
+
+
+
+*{
+  color:black;
+  /* font-family: "myFirstFont"; */
+}
+
 body{
     background-color: rgb(210,232,205);
     /* text-align: center; */
@@ -34,6 +47,7 @@ p{
     margin-right: 5px;
     background-color: rgb(194,224,188);
     color: black;
+    /* font-family: 'Times New Roman'; */
 
 }
 
@@ -150,7 +164,7 @@ summary{
     padding: 6px 8px 6px 20px;
     text-decoration: none;
     font-size: 25px;
-    color: rgb(0, 0, 0);
+    color: hsl(0, 0%, 0%);
   }
   /* ------------------------------------------------ */
 
@@ -159,7 +173,19 @@ summary{
     color: #9c6161;
   }
   
+  /* want to make it so that it turns color when you hover. */
+  p:hover,li:hover{
+    color: #9c6161;
+  }
+
+  h1:hover,h2:hover,h3:hover,h4:hover{
+    color:aqua;
+  }
+
+
+
 body{
+    /* display: grid; */
     margin-left:160px;
     padding: 0px 10px;
   }
@@ -171,3 +197,38 @@ body{
     padding-bottom: 1px;
     text-align: center;
   }
+
+  button:active{
+    color: green;
+    background-color: yellow;
+  }
+
+  ol{
+    display:flex;
+    /* flex-direction: row | row-reverse | column | column-reverse;
+    flex-wrap: nowrap | wrap | wrap-reverse; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+
+  ul{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content:center;
+    align-self: flex-start;
+  }
+
+  @media screen and (max-width: 800px) {
+    /* if screen is too small, destroy everything with blue. */
+    *{
+      color: blue;
+    }
+  }
+
+
+  /* addgrid: todo */
+
+
+
